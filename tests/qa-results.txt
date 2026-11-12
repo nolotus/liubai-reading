@@ -1,0 +1,18 @@
+PASS A-small-reading-experiment.pdf import, duplicate, 2 sections, codepoint anchor, question, followup, manual answer, insight, missing AI retains data, ZIP markdown/attachment/anchor integrity
+PASS 带着问题读书.epub import, duplicate, 2 sections, codepoint anchor, question, followup, manual answer, insight, missing AI retains data, ZIP markdown/attachment/anchor integrity
+PASS bad json 400
+PASS invalid PDF 400
+PASS invalid EPUB 400
+PASS wrong type 400
+PASS empty followup 400
+PASS missing AI 503
+PASS cross origin 403
+PASS missing book 404
+PASS wrong quote 400
+PASS negative section 400
+HOST_CHECK 403
+ALL API CHECKS FINISHED; isolated data: /tmp/reading-qa-7b1cahhv
+PASS 20 simultaneous follow-ups without lost writes
+PASS object and string payload validation
+PASS follow-up survives concurrent simulated AI response; no external request
+PASS no-text PDF, password-protected PDF, oversized declared body
